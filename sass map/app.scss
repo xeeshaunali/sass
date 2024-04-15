@@ -1,0 +1,95 @@
+@use 'navbar'; @use 'header';
+
+// List in SCSS
+
+// $colors:('red','green','blue');
+// @debug $colors;
+
+
+// $colors:('red','green','blue');
+// @each $color in $colors {
+//     @debug $color;
+//     .color-#{$color} {
+//         background: #{$color};
+//     }
+// }
+
+
+$colors:('red','blue', 'green');
+@each $color in $colors{
+    @debug $color;
+    .color-#{$color} {
+        background: #{$color};
+    }
+}
+
+
+
+// $fontWeights:('normal': 400, 'bold': 600, 'extraBold': 800 );
+// @debug map_get($fontWeights, 'bold');
+
+
+$fontWeights:('normal': 400, 'bold': 600, 'extraBold': 800 );
+@each $font in $fontWeights {
+    @debug $font;
+
+}
+
+$fontWeights:('normal': 400, 'bold': 600, 'extraBold': 800 );
+@each $key, $value in $fontWeights {
+    @debug 'Your Key is:' #{$key};
+    @debug 'Your Value is:' #{$value};
+
+}
+
+$fontWeights: ('normal':400, 'bold':500, 'extraBold':600);
+@each $key, $value in $fontWeights {
+    @debug 'Your Key is:' #{$key};
+    @debug 'Your Value is:' #{$value};
+    .font-#{$key} {
+        font-weight: #{$value};
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.nav{
+    background: orange;
+    flex-basis: 100%;
+    height: 80px;
+    line-height: 80px;
+
+    &__ul{
+        list-style:none;
+
+        &__li{
+            display: inline-block;
+
+            &__a{
+                text-decoration:none;                
+
+                &--white{
+                    color: whitesmoke;
+                }
+
+                &--white:hover{
+                    color: red;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    transition: 500ms;
+                }
+
+                &--green {
+                    color: green;
+                }
+            }
+        }
+    }
+}

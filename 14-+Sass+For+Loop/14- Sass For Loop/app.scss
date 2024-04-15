@@ -1,0 +1,51 @@
+@use 'navbar';
+@use "header";
+
+$colors: ('orange', 'green', 'red', 'blue');
+$fontWeights: ('normal': 400, 'bold': 500, 'extraBold': 600);
+
+
+$startLoop: 1;
+$endLoop: 20;
+
+@for $i from $startLoop through $endLoop {
+       .fontSize-#{$i} {
+           font-size: #{$i}px;
+       }
+}
+
+@each $key, $value in $fontWeights {
+   .font-#{$key} {
+       font-weight: $value;
+   }
+}
+
+@each $color in $colors {
+   
+    .color-#{$color} {
+        background: #{$color};
+    }
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background: orange;
+    line-height: 80px;
+    &__ul {
+        list-style: none;
+        &__li {
+            display: inline-block;
+           &__a {
+                text-decoration: none;
+                color: white;
+                &--red {
+                    color:red;
+                }
+                &--indigo {
+                    color: indigo;
+                }
+            }
+        } 
+    }
+}

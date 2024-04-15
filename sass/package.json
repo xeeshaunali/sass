@@ -1,0 +1,11 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "Learn SASS or SCSS from Scratch",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass app.scss app.css --watch --no-source-map"
+  },
+  "author": "Zeeshan Ali",
+  "license": "ISC"
+}

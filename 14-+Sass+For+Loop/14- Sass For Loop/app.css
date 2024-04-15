@@ -1,0 +1,140 @@
+nav {
+  background: orange;
+  color: white;
+}
+
+header {
+  background: indigo;
+  color: white;
+}
+
+.fontSize-1 {
+  font-size: 1px;
+}
+
+.fontSize-2 {
+  font-size: 2px;
+}
+
+.fontSize-3 {
+  font-size: 3px;
+}
+
+.fontSize-4 {
+  font-size: 4px;
+}
+
+.fontSize-5 {
+  font-size: 5px;
+}
+
+.fontSize-6 {
+  font-size: 6px;
+}
+
+.fontSize-7 {
+  font-size: 7px;
+}
+
+.fontSize-8 {
+  font-size: 8px;
+}
+
+.fontSize-9 {
+  font-size: 9px;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+.fontSize-11 {
+  font-size: 11px;
+}
+
+.fontSize-12 {
+  font-size: 12px;
+}
+
+.fontSize-13 {
+  font-size: 13px;
+}
+
+.fontSize-14 {
+  font-size: 14px;
+}
+
+.fontSize-15 {
+  font-size: 15px;
+}
+
+.fontSize-16 {
+  font-size: 16px;
+}
+
+.fontSize-17 {
+  font-size: 17px;
+}
+
+.fontSize-18 {
+  font-size: 18px;
+}
+
+.fontSize-19 {
+  font-size: 19px;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.font-extraBold {
+  font-weight: 600;
+}
+
+.color-orange {
+  background: orange;
+}
+
+.color-green {
+  background: green;
+}
+
+.color-red {
+  background: red;
+}
+
+.color-blue {
+  background: blue;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background: orange;
+  line-height: 80px;
+}
+.nav__ul {
+  list-style: none;
+}
+.nav__ul__li {
+  display: inline-block;
+}
+.nav__ul__li__a {
+  text-decoration: none;
+  color: white;
+}
+.nav__ul__li__a--red {
+  color: red;
+}
+.nav__ul__li__a--indigo {
+  color: indigo;
+}

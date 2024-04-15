@@ -1,0 +1,53 @@
+.color-red {
+  background: red;
+}
+
+.color-blue {
+  background: blue;
+}
+
+.color-green {
+  background: green;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.font-extraBold {
+  font-weight: 600;
+}
+
+.nav {
+  background: orange;
+  flex-basis: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+.nav__ul {
+  list-style: none;
+}
+.nav__ul__li {
+  display: inline-block;
+}
+.nav__ul__li__a {
+  text-decoration: none;
+}
+.nav__ul__li__a--white {
+  color: whitesmoke;
+}
+.nav__ul__li__a--white:hover {
+  color: red;
+  text-align: center;
+  letter-spacing: 3px;
+  transition: 500ms;
+}
+.nav__ul__li__a--green {
+  color: green;
+}
+
+/*# sourceMappingURL=app.css.map */

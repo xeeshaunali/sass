@@ -1,0 +1,14 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass app.scss app.css --watch"
+  },
+  "keywords": [
+    "SAss"
+  ],
+  "author": "Zeeshan Ali",
+  "license": "ISC"
+}
