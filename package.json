@@ -1,11 +1,22 @@
 {
   "name": "scss",
   "version": "1.0.0",
-  "description": "Sass",
+  "description": "SASS",
   "main": "index.js",
   "scripts": {
     "sass": "sass app.scss app.css --watch"
   },
-  "author": "Zeeshan Ali",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeeshaunali/sass.git"
+  },
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Xeeshaun Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xeeshaunali/sass/issues"
+  },
+  "homepage": "https://github.com/xeeshaunali/sass#readme"
 }

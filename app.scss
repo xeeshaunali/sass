@@ -1,102 +1,17 @@
-@use 'navbar'; @use 'header';
+$header: blue;
+$navbar:red;
+$color:white;
 
-
-$colors:('red','green','blue');
-@each $color in $colors {
-    @debug $color;
-    .color-#{$color} {
-        background-color: #{$color};
-    }
+.back {
+    background-color: $header;
 }
 
-
-$fontWeight:('normal':400, 'bold':500,'extraBold':600);
-@each $key, $value in $fontWeight{
-        @debug $fontWeight;
-        .color-#{$key}{
-            font-weight: #{$value};
-        }
+.back1 {
+    background-color: $navbar;
 }
 
-
-//for loop
-
-$startLoop:1;
-$endLoop:20;
-
-@for $i from $startLoop through $endLoop {
-    @debug $i;
-    .fontSize-#{$i} {
-        font-size:#{$i}px;
-    }
-}
-
-
-$startLoop:1;
-$endLoop:20;
-
-
-@for $i from $startLoop through $endLoop {
-    @debug $i;
-    .font-size-#{$i} {
-        font-size: #{$i}
-    }
-} 
-
-
-$circle: true;
-
-.header {
-    width: 200px;
-    height: 200px;
-    @if $circle {
-        border-radius: 50%;
-    }
-
-}
-
-
-
-$circle:'normal';
-.header {
-    width: 200px;
-    height: 200px;
-
-@if $circle == 'abc' {
-    width: 50%;
-} @else if $circle == 'bc' {
-    width: 60%;
-} @else if $circle == 'normal' {
-    flex-basis:100%;
-}
-
-}
-
-
-
-
-@function grid($number){
-    @return 100% / 12 * $number; //$number could be any thing upto 12 because there are 12 columns and functiuon grin() takes only one parameter. 
-}
-
-.col-1 {
-    width: grid(6);
-}
-
-
-.alert {
-    padding: 15px;
-    font-size: 16px;    
-    color: white;
-
-}
-
-// Inherit CSS class
-.alert-extend {
-    @extend .alert;
-    background-color: red;
-
-
+.back2{
+    background-color: $color;
 }
 
 
